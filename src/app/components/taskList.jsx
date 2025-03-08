@@ -32,7 +32,7 @@ const TaskList = () => {
                         return (
                             !item.complete && checkValid(item) && <div key={item.id} className={`flex flex-row justify-between px-2   border-[#496E4B33] ${layoutState.isGrid ? 'border-1 py-8' : 'border-t-1 py-5'}`}>
                                 <div className='flex gap-3 items-center'>
-                                    <Checkbox className='text-amber-600' sx={{ '& .css-1umw9bq-MuiSvgIcon-root': layoutState.isDark ? { color: 'var(--background)' } : { color: 'var(--foreground)' } }} checked={item.complete} color='success' onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
+                                    <Checkbox className='text-amber-600' sx={{ '& .mui-MuiSvgIcon-root': layoutState.isDark ? { color: 'var(--background)' } : { color: 'var(--foreground)' } }} checked={item.complete} color='success' onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
                                     <p className={`${layoutState.isDark ? 'text-[var(--background)]' : 'text-[var(--foreground)]'}`}>{item.task}</p>
                                 </div>
 
@@ -58,7 +58,7 @@ const TaskList = () => {
                         return (
                             item.complete && checkValid(item) && <div key={item.id} className='flex flex-row justify-between px-2 py-5 border-t-1 border-[#496E4B33]'>
                                 <div className='flex gap-3 items-center'>
-                                    <Checkbox checked={item.complete} color='success' sx={{ '& .mui-1umw9bq-MuiSvgIcon-root': { color: 'white' } }} onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
+                                    <Checkbox checked={item.complete} color='success' sx={{ '& .mui-MuiSvgIcon-root': { color: 'white' } }} onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
                                     <p className={`${layoutState.isDark ? 'text-[var(--background)]' : 'text-[var(--foreground)]'} line-through`}>{item.task}</p>
                                 </div>
                                 <div className='flex gap-3 items-center'>
