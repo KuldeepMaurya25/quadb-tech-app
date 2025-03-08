@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FBFDFC;
+  --foreground: #242424;
+  --black: #1B281B;
+  --green: #357937;
+  --white: #EBEBEB;
 }
 
 @theme inline {
@@ -22,5 +25,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'outfit' !important;
+}
+
+.green-image {
+  filter: brightness(0) invert(1) sepia(1) saturate(500%) hue-rotate(85deg);
 }

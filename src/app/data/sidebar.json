@@ -1,0 +1,20 @@
+{
+    "taskType": [
+        {
+            "key": "all_task",
+            "name": "All Task"
+        },
+        {
+            "key": "today",
+            "name": "Today"
+        },
+        {
+            "key": "importent",
+            "name": "Importent"
+        },
+        {
+            "key": "assigned_to_me",
+            "name": "Assigned to me"
+        }
+    ]
+}
