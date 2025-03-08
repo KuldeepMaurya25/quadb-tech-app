@@ -4,7 +4,9 @@
 import Providers from "./redux/providers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./lib/muitheme"; // Import the theme file
+import CssBaseline from "@mui/material/CssBaseline";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,7 +29,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          {children}
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            {children}
+          </ThemeProvider>
         </Providers>
       </body>
     </html>
