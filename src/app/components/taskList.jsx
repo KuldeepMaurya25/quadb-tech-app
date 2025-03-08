@@ -58,7 +58,7 @@ const TaskList = () => {
                         return (
                             item.complete && checkValid(item) && <div key={item.id} className='flex flex-row justify-between px-2 py-5 border-t-1 border-[#496E4B33]'>
                                 <div className='flex gap-3 items-center'>
-                                    <Checkbox checked={item.complete} color='success' sx={{ '& .css-142eysa-MuiButtonBase-root-MuiCheckbox-root': { color: 'white' } }} onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
+                                    <Checkbox checked={item.complete} color='success' sx={{ '& .mui-1umw9bq-MuiSvgIcon-root': { color: 'white' } }} onClick={() => dispatch(editTask({ id: item.id, complete: !item.complete, importent: item.importent }))} />
                                     <p className={`${layoutState.isDark ? 'text-[var(--background)]' : 'text-[var(--foreground)]'} line-through`}>{item.task}</p>
                                 </div>
                                 <div className='flex gap-3 items-center'>

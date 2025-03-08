@@ -20,9 +20,9 @@ const TaskInput = () => {
         fullWidth
         onChange={(e) => dispatch(handleTaskInput({ value: e.target.value }))}
         sx={{
-          "& .css-r84nrn-MuiInputBase-input-MuiFilledInput-input": layoutState.isDark ? { color: 'var(--background)' } : { color: 'var(--foreground)' },
-          "& .css-tigmpx-MuiInputBase-root-MuiFilledInput-root": { backgroundColor: 'transparent' },
-          "& .css-tigmpx-MuiInputBase-root-MuiFilledInput-root::before": { borderBottom: "none", transition: "none" },
+          "& .mui-1ohi1vy-MuiInputBase-input-MuiFilledInput-input": layoutState.isDark ? { color: 'var(--background)' } : { color: 'var(--foreground)' },
+          "& .mui-tigmpx-MuiInputBase-root-MuiFilledInput-root": { backgroundColor: 'transparent' },
+          "& .mui-tigmpx-MuiInputBase-root-MuiFilledInput-root::before": { borderBottom: "none", transition: "none" },
           "& .css-tigmpx-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disabled, .Mui-error):before": { borderBottom: "none" },
           "& .css-qan929-MuiFormControl-root-MuiTextField-root .css-tigmpx-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disabled, .Mui-error):before": { borderBottom: "none", borderBottomColor: '' }
         }}

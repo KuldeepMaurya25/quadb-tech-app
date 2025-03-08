@@ -49,7 +49,7 @@ const HomeScreen = () => {
                     </div>
                 </div>
             </motion.div>
-            <Drawer open={layoutState.isSidebarOpen} onClose={() => dispatch(handleSidebar())} className='md:hidden' sx={{ '& .css-cyqh1t-MuiPaper-root-MuiDrawer-paper': { backgroundColor: layoutState.isDark ? 'var(--foreground)' : 'var(--background)' } }}>
+            <Drawer open={layoutState.isSidebarOpen} onClose={() => dispatch(handleSidebar())} className='md:hidden' sx={{ '& .mui-cyqh1t-MuiPaper-root-MuiDrawer-paper': { backgroundColor: layoutState.isDark ? 'var(--foreground)' : 'var(--background)' } }}>
                 <Sidebar />
             </Drawer>
         </div>
